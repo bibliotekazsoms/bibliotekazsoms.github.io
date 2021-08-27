@@ -1,0 +1,1732 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+.clearfix {*zoom: 1;}
+.clearfix:before, .clearfix:after {display: table; content: "";}
+.clearfix:after {clear: both;}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+img, a img{
+	padding: 3px;
+	margin: 5px 8px 5px 5px;
+	border: 1px solid #facc9a;
+	background-color: #fff;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+body .plain img{
+	border: none;
+	background: transparent none;
+	padding: 0;
+	margin: 0;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+body .page img.plain, body * img.plain, body #fancybox-thumbs img{
+	border: none;
+	background: transparent none;
+	padding: 0;
+	margin: 0;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#fancybox-thumbs ul li {
+	list-style-image: none;
+}
+
+#fancybox-buttons ul li{
+	list-style-image: none;
+}
+.fancybox-image{
+	border: none;
+	background: transparent none;
+	padding: 0;
+	margin: 0;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+a{
+	color: #EA831C;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	color: #f00;
+}
+a.pdf, a._pdf, a.pdf_{
+    	background-image: url(../img/icons/pdf.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/icons/pdf.gif*/;
+}
+a.www, a._www, a.www_{
+    	background-image: url(../img/icons/www.png)/*tpa=http://www.zsoms1.bialystok.pl/img/icons/www.png*/;
+}
+a.plik, a._plik, a.plik_{
+    	background-image: url(../img/icons/plik.png)/*tpa=http://www.zsoms1.bialystok.pl/img/icons/plik.png*/;
+}
+a.rar, a._rar, a.rar_{
+    	background-image: url(../img/icons/rar.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/icons/rar.gif*/;
+}
+a.rar_exe, a._rar_exe, a.rar_exe_{
+    	background-image: url(../img/icons/rar_exe.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/icons/rar_exe.gif*/;
+}
+a.pps, a.ppt, a._ppt, a.ppt_{
+    	background-image: url(../img/icons/pps.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/icons/pps.gif*/;
+}
+a.doc, a._doc, a.doc_{
+    	background-image: url(../img/icons/doc.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/icons/doc.gif*/;
+}
+a.xls, a._xls, a.xls_{
+    	background-image: url(../img/icons/xls.png)/*tpa=http://www.zsoms1.bialystok.pl/img/icons/xls.png*/;
+}
+a.email, a._email, a.email_{
+    	background-image: url(../img/icons/email.png)/*tpa=http://www.zsoms1.bialystok.pl/img/icons/email.png*/;
+}
+a.pdf, a.www, a.plik, a.rar, a.rar_exe, a.email, a.xls, a.pps, a.ppt, a.doc, a.xls,
+a._pdf, a._www, a._plik, a._rar, a._rar_exe, a._email, a._xls, a._ppt, a._doc, a._xls{
+    	background-position: left center;
+    	background-repeat: no-repeat;
+    	border-bottom: 1px solid #EA831C;
+    	display: inline-block;
+    	line-height: 18px;
+    	padding-left: 20px;
+    	position: relative;
+	color: #666;
+}
+a.pdf_, a.www_, a.plik_, a.rar_, a.rar_exe_, a.email_, a.xls_, a.ppt_, a.doc_, a.xls_{
+    	background-position: right center;
+    	background-repeat: no-repeat;
+    	border-bottom: 1px solid #EA831C;
+    	display: inline-block;
+    	line-height: 18px;
+    	padding-right: 20px;
+    	position: relative;
+	color: #666;
+}
+a.pdf:hover, a.www:hover, a.plik:hover, a.rar:hover, a.rar_exe:hover, a.email:hover, a.xls:hover, a.pps:hover, a.ppt:hover, a.doc:hover, a.xls:hover,
+a._pdf:hover, a._www:hover, a._plik:hover, a._rar:hover, a._rar_exe:hover, a._email:hover, a._xls:hover, a._ppt:hover, a._doc:hover, a._xls:hover,
+a.pdf_:hover, a.www_:hover, a.plik_:hover, a.rar_:hover, a.rar_exe_:hover, a.email_:hover, a.xls_:hover, a.ppt_:hover, a.doc_:hover, a.xls_:hover{
+	text-decoration: none;
+	border-color: #0F4293;
+	color: #f00;
+}
+a.pdf sub,  a.www sub,  a.plik sub, a.rar sub, a.rar_exe sub, a.email sub, a.xls sub, a.pps sub, a.ppt sub, a.doc sub, a.xls sub,
+a._pdf sub,  a._www sub, a._plik sub, a._rar sub, a._rar_exe sub, a._email sub, a._xls sub, a._ppt sub, a._doc sub, a._xls sub,
+a.pdf_ sub,  a.www_ sub, a.plik_ sub, a.rar_ sub, a.rar_exe_ sub, a.email_ sub, a.xls_ sub, a.ppt_ sub, a.doc_ sub, a.xls_ sub{
+	bottom: -16px;
+    	display: block;
+    	left: 0;
+    	padding-left: 20px;
+    	position: absolute;
+	font-size: 12px;
+	color: #aaa;
+}
+.ie a.pdf sub, .ie a.www sub, .ie a.plik sub, .ie a.rar sub, .ie a.rar_exe sub, .ie a.email sub, .ie a.xls sub, .ie a.pps sub, .ie a.ppt sub, .ie a.doc sub, .ie a.xls sub,
+.ie a._pdf sub, .ie a._www sub, .ie a._plik sub, .ie a._rar sub, .ie a._rar_exe sub, .ie a._email sub, .ie a._xls sub, .ie a._ppt sub, .ie a._doc sub, .ie a._xls sub,
+.ie a.pdf_ sub, .ie a.www_ sub, .ie a.plik_ sub, .ie a.rar_ sub, .ie a.rar_exe_ sub, .ie a.email_ sub, .ie a.xls_ sub, .ie a.ppt_ sub, .ie a.doc_ sub, .ie a.xls_ sub{
+	font-size: 14px;
+}
+h1{
+	font: 22px tahoma, cursive;
+	color: #EA831C;
+	margin: 10px 0 8px 0px;
+}
+h2{
+	font: 18px tahoma, cursive;
+	color: #0F4293;
+	margin: 10px 0 8px 0px;
+}
+h3{
+	color: #0F4293;
+	font: bold 15px tahoma, cursive;
+	margin: 8px 0 5px 0px;
+}
+h4{
+	color: #0F4293;
+	font: bold 13px tahoma, cursive;
+	margin: 8px 0 5px 0px;
+}
+h5{
+	color: #EA831C;
+	font: bold 13px tahoma, cursive;
+	margin: 5px 0 4px 0px;
+}
+h6{
+	color: #00346a;
+	background-color: #eaeef7;
+	font: bold 12px tahoma, cursive;
+	padding: 4px 6px;
+	margin: 5px 0px 4px 0px;
+}
+
+h1 a, h1 a:hover{
+	display: block;
+	color: #0F4293;
+}
+h2 a, h2 a:hover{
+	color: #0F4293;
+	display: block;
+}
+h3 a, h3 a:hover{
+	color: #0F4293;
+	display: inline-block;
+}
+h4 a, h4 a:hover{
+	color: #0F4293;
+}
+h5 a, h5 a:hover{
+	color: #0F4293;
+}
+hr, .hr{
+	border: none;
+	border-top: #EA831C 1px solid;
+	height: 1px;
+	overflow: hidden;
+	font-size: 1px;
+	line-height: 1px;
+	margin: 10px 0;
+}
+ol{
+	list-style-type: decimal;
+	list-style-position: outside;
+	padding: 0;
+	margin: 5px 0 5px 20px;
+}
+ol ul{
+	padding: 0;
+}
+ol li{
+	list-style-image: none;
+	padding: 0px 0 0px 0px;
+}
+ol li span{
+	color: #666;
+}
+ul{
+	list-style-image: none;
+	list-style-position: outlide;
+	list-style-type: none;
+	padding: 0 0 0 8px;
+	margin-left: 12px;
+}
+ul li{
+	list-style-image: url(../img/layout/li.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/li.gif*/;
+	padding: 1px 0 1px 0px;
+}
+.cke_panel_frame li{
+	background: none;
+	padding: 0;
+	margin: 0;
+	list-style-image: none;
+}
+.cke_panel_frame a:hover {
+	text-decoration: none;
+}
+p{
+	margin: 4px 0 12px;
+	text-align: justify;
+}
+.clear{
+	clear: both;
+	height: 0px;
+	overflor: hidden;
+	font-size: 0px;
+	line-height: 0px;
+	background-color: blue;
+}
+.gap5{
+	height: 5px;
+	line-height: 2px;
+	overflow: hidden;
+	font-size: 2px;
+}
+.gap10{
+	height: 10px;
+	line-height: 2px;
+	overflow: hidden;
+	font-size: 2px;
+}
+
+table{
+	margin: 5px 0 3px;
+	border-collapse: collapse;
+}
+table td, table th{
+	padding: 5px;
+}
+table thead th{
+	background-color: #eaeef7;
+	border: #e0e0e0 1px solid;
+    	font: bold 13px tahoma;
+    	padding: 8px 5px;
+	text-align: center;
+	color: #00346a;
+}
+table tbody th{
+	background-color: #eaeef7;
+    	border: #e0e0e0 1px solid;
+	border-width: 0px 1px 1px 1px;
+    	color: #00346a;
+    	overflow: hidden;
+    	padding: 7px 10px 7px 5px;
+    	text-align: left;
+    	vertical-align: top;
+	font-weight: normal;
+	font: bold 13px tahoma;
+}
+table tbody td{
+    	border: #e0e0e0 1px solid;
+    	font-size: 12px;
+    	overflow: hidden;
+    	padding: 6px 5px 6px;
+    	vertical-align: top;
+}
+table tbody tr:nth-child(odd) td{
+	background-color: #fafbfd;
+}
+table tbody th:first-child, table thead th:first-child, table tbody td:first-child{
+	border-left: #e0e0e0 0px solid;
+}
+table tbody th:last-child, table thead th:last-child, table tbody td:last-child{
+	border-right: #e0e0e0 0px solid;
+}
+table td p, table th p{
+	margin: 0px 0;
+}
+
+.fit{
+	margin: 0;
+}
+.fit th, .fit td{
+	border: none;
+	background: none;
+}
+.fit table tbody tr:nth-child(odd) td, table.fit  tbody tr:nth-child(odd) td{
+	background: none;
+}
+.fit .stopka{
+	font: bold 10px tahoma; 
+	padding-top: 0;
+	padding-bottom: 0;
+	text-align: center;
+}
+.fit img{
+	margin: 0;
+}
+
+.compatible{
+	clear: both;
+}
+.compatible p{
+	margin: 0;
+}
+.compatible table{
+	width: 100%;
+}
+.compatible td{
+	border: none;
+}
+.compatible table tr:nth-child(odd) td{
+	background: none;
+}
+
+.item{
+	border-bottom: 1px solid #dedede;
+	padding-bottom: 5px;
+}
+.news .item:last-child{
+	border: 0px none;
+}
+.small{
+	width: 140px;
+	float: left;
+}
+.small img{
+	margin-top: 0;
+	margin-left: 0;
+}
+.desc{
+	text-align: justify;
+}
+#main_panel .print{
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	color: #003366;
+	font-size: 11px;
+	font-weight: bold;
+}
+#main_panel .print img{
+	margin: 0 5px 0 0;
+}
+.more, .back{
+	color: #003366;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: right;
+	display: block;
+}
+.more:hover, .back:hover{
+	color: #003366;
+	text-decoration: none;
+}
+.see{
+	margin-top: 5px;
+	text-align: right;
+	float: right;
+}
+.control{
+	margin-top: 0px;
+	clear: both;
+}
+.control .back{
+	text-align: right;
+	color: #003366;
+}
+.more span, .back span{
+	color: #EA831C;
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	bottom: -2px;
+}
+h2 a, h2 a:hover{
+	display: inline;
+}
+h2 .more, h2 .more:hover, h3 .more{
+	display: inline;
+	line-height: 12px;
+}
+.date{
+	color: #676767;
+	font: 12px tahoma;
+	margin: 10px 0 -8px;
+}
+.author{
+	margin: 20px 0 5px;
+	color: #676767;
+	text-align: right;
+	text-decoration: underline;
+}
+
+
+.our{
+	background: transparent url(../img/layout/our-bg.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/our-bg.gif*/ repeat-x left bottom;
+	padding: 0px 0px 0px;
+}
+.page{
+	background: #fff url(../img/layout/page-bg.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/page-bg.gif*/ repeat-x;
+}
+.home{
+	background: #fff url(../img/layout/home-bg.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/home-bg.gif*/ repeat-x;
+}
+body{
+	color: #3c3c3c;
+	font: 12px tahoma, sans-serif;
+	padding: 0 12px;
+}
+.body{
+	width: 992px;
+	padding: 0 12px;
+	margin: 0 auto;
+	background: transparent url(../img/layout/page-body-bg.jpg)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/page-body-bg.jpg*/ no-repeat right top;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+.home .body{
+	background: transparent url(../img/layout/home-body-bg.jpg)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/home-body-bg.jpg*/ no-repeat right top;
+}
+body div.big{
+	font-size: 16px;
+}
+
+header{
+	height: 218px;
+	position: relative;
+	background: transparent url(../img/layout/header-bg.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/header-bg.png*/ no-repeat center bottom;
+}
+.home header{
+	height: 457px;
+}
+.page header{
+	background: transparent url(../img/layout/page-header-bg.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/page-header-bg.png*/ no-repeat 0 -2px;
+}
+header .hgroup{
+	position: relative;
+}
+header .hgroup .akcja{
+	position: absolute;
+	width: 140px;
+	right: 40px;
+	bottom: 41px;
+}
+header .logo{
+	display: inline-block;
+	/*padding: 36px 0 0 21px;*/
+	padding: 0;
+	width: 530px;
+	height: 140px;
+	overflow: hidden;
+}
+header .logo img{
+	max-width: 530px;
+}
+header .search{
+	position: absolute;
+	top: 111px;
+	right: 15px;
+	width: 173px;
+	height: 27px;
+	background: transparent url(../img/layout/search-bg.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/search-bg.png*/ no-repeat;
+}
+.search .input-text{
+	width: 120px;
+	padding: 6px 10px;
+	border: none;
+	background: transparent none;
+	font-size: 11px;
+	color: #fff;
+	float: left;
+}
+.search .input-img{
+	float: left;
+	padding: 1px 0;
+}
+nav{
+	width: 622px;
+	height: 35px;
+	margin: 13px 10px 0;
+	background: transparent url(../img/layout/nav-bg.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/nav-bg.png*/ no-repeat;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+}
+.page nav{
+	/*width: 734px;*/
+	background: transparent url(../img/layout/page-nav-bg.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/page-nav-bg.png*/ no-repeat;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	width: 980px;
+}
+nav li{
+	float: left;
+	position: relative;
+	z-index: 20;
+	margin: 0 1px;
+	padding: 0px;
+	width: 107px;
+	text-align: center;
+	list-style-image: none;
+}
+nav li a{
+	display: block;
+	padding: 10px 0px 11px 0px;
+	width:auto;
+	border: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: bold 12px tahoma;
+	outline: none;
+	color: #666;
+}
+nav a:hover{
+	text-decoration: none;
+}
+nav ul ul a{
+	line-height: 20px;
+	font-size: 12px;
+	cursor: pointer;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding: 4px 10px;
+}
+
+
+nav li.current a{
+	background: transparent url(../img/layout/nav-li-a-current.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/nav-li-a-current.gif*/ no-repeat top left;
+	color: #fff;
+}
+nav li.hover a{
+	background: transparent url(../img/layout/nav-li-a-current.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/nav-li-a-current.gif*/ no-repeat top left;
+	color: #fff;
+}
+nav li.hover a.sub{
+	background: transparent url(../img/layout/nav-li-a-sub-current.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/nav-li-a-sub-current.gif*/ no-repeat top left;
+	color: #fff;
+}
+nav li.hover a.sub:hover{
+	/*background: transparent url(../img/layout/nav-li-a-sub-hover.gif) no-repeat top left;*/
+	color: #fff;
+}
+nav li ul{
+	background: url(../img/layout/nav-li-ul.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/nav-li-ul.gif*/ repeat-y top left transparent;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	line-height: 50px; 
+	z-index: 5;
+	display: none;
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	width: 175px;
+	-moz-border-radius: 0 10px 10px 10px;
+	-webkit-border-radius: 0 10px 10px 10px;
+	border-radius: 0 10px 10px 10px;
+}
+nav li ul li, nav li.hover ul li{
+	display: block;
+	width: 175px;
+	background: transparent url(../img/layout/nav-li-ul-li-top.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/nav-li-ul-li-top.gif*/ no-repeat top left;
+	padding: 0px 0 0 0px;
+	margin: 1px 0 0;
+}
+nav li ul li a, nav li.hover ul li a{
+	color: #fff;
+	text-transform: none;
+	display: block;
+	width: 135px;
+	background: transparent url(../img/layout/nav-li-ul-li-bottom.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/nav-li-ul-li-bottom.gif*/ no-repeat bottom center;
+	padding: 5px 20px 6px;
+}
+nav li ul li.first, nav li.hover ul li.first{
+	background-image: none;
+	margin: 0;
+}
+nav li ul li.last a, nav li.hover ul li.last a, nav li.hover ul li:last-child a{
+	background: transparent url(../img/layout/nav-li-ul-li-last.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/nav-li-ul-li-last.png*/ no-repeat bottom center;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+}
+nav li ul li a:hover, nav li.hover ul li a:hover{
+	background: transparent url(../img/layout/nav-li-ul-li-current.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/nav-li-ul-li-current.gif*/ repeat-y bottom center;
+}
+nav li.hover ul li:first-child a{
+	-moz-border-radius: 0 10px 0px 0px;
+	-webkit-border-radius: 0 10px 0px 0px;
+	border-radius: 0 10px 0px 0px;
+}
+
+nav #home{
+    	background: transparent url(../img/layout/home.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/home.gif*/ no-repeat top right;
+    	text-indent: -9999px;
+    	width: 32px;
+	margin: 0 0 0 4px;
+}
+nav #kontakt a{
+    	background: transparent url(../img/layout/kontakt.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/kontakt.png*/ no-repeat center 6px;
+    	text-indent: -9999px;
+    	width: 34px;
+	height: 25px;
+	margin: 0 0 0 -5px;
+	padding: 5px 5px 5px;
+}
+nav #home a{
+	width: 34px;
+	height: 25px;
+	padding: 5px 5px 5px;
+}
+nav #home.hover{
+    	/*background: transparent url(../img/layout/home-hover.gif) no-repeat center center;*/
+}
+nav #home.hover a{
+	background: none;
+}
+
+nav aside{
+	width: 347px;
+	position: absolute;
+	right: 0;
+	top: 145px;
+	padding-top: 0;
+}
+.home nav aside{
+	background: transparent url(../img/layout/home-nav-aside.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/home-nav-aside.png*/ no-repeat top right;
+}
+.page nav aside{
+	background: transparent url(../img/layout/page-nav-aside.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/page-nav-aside.png*/ no-repeat top right;
+	width: 235px;
+	top: 218px;
+	padding-top: 0px;
+}
+nav aside table{
+	margin: 0px 0 10px 5px;
+}
+.page nav aside table{
+	margin: 0px 0 8px 15px;
+}
+nav aside td{
+	vertical-align: middle;
+	padding: 11px 0px 12px 5px;
+}
+.page nav aside td{
+	padding: 1px 0px 1px 5px;
+}
+.page nav aside td.liceum{
+	padding-bottom: 15px;
+}
+nav aside td i{
+	width: 32px;
+	height: 32px;
+	background-position: 0 0;
+	display: block;
+}
+nav aside td table.hover i, nav aside td table.selected i{
+	background-position: 0 -32px;
+}
+nav aside td, nav aside td a{
+	color: #fff;
+	font-family: 'Voces', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	text-decoration: none;
+}
+nav aside td table.hover td a, nav aside td table.selected td a{
+	color: #f9b000;
+}
+/*nav aside .orange td a:hover td{
+	color: #fff;
+}*/
+nav aside .gimnazjum, nav aside .liceum{
+	padding: 5px 0 23px 5px;
+}
+nav aside .gimnazjum i{
+	background-image: url(../img/layout/gimnazjum.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/gimnazjum.png*/;
+	width: 42px;
+	height: 42px;
+}
+nav aside .liceum i{
+	background-image: url(../img/layout/liceum.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/liceum.png*/;
+	width: 42px;
+	height: 42px;
+}
+nav aside td.gimnazjum table.hover i, nav aside td.gimnazjum table.selected i, nav aside td.liceum table.hover i, nav aside td.liceum table.selected i{
+	background-position: 0 -42px;
+}
+nav aside .gimnazjum .layout a, nav aside .liceum .layout a{
+	font-size: 18px;
+	padding: 0 2px 0 0px;
+}
+nav aside .gimnazjum .layout .nazwa a{
+	margin-left: 10px;
+}
+nav aside .plan i{
+	background-image: url(../img/layout/plan.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/plan.png*/;
+}
+nav aside .uczniowie i{
+	background-image: url(../img/layout/uczniowie.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/uczniowie.png*/;
+}
+nav aside .zajecia i{
+	background-image: url(../img/layout/zajecia.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/zajecia.png*/;
+}
+nav aside .dziennik i{
+	background-image: url(../img/layout/dziennik.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/dziennik.png*/;
+}
+nav aside .projekty i{
+	background-image: url(../img/layout/projekty.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/projekty.png*/;
+}
+nav aside .biblioteka i{
+	background-image: url(../img/layout/biblioteka.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/biblioteka.png*/;
+}
+
+.page nav aside .uczniowie table{
+	width: 175px;
+}
+
+nav aside table.orange{
+	margin: 0px 0 10px 10px;
+	width: 100%;
+}
+nav aside table.orange td a{
+	color: #38383a;
+}
+nav aside .orange td table.hover td a, nav aside .orange td table.selected td a{
+	color: #38383a;
+}
+nav aside .zdjecia{
+	width: 160px;
+}
+nav aside .zdjecia i{
+	width: 48px;
+	height: 32px;
+	background-image: url(../img/layout/zdjecia.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/zdjecia.png*/;
+}
+nav aside td.zdjecia a:hover i{
+	background-position: 0 0;
+}
+nav aside .filmy i{
+	width: 64px;
+	height: 32px;
+	background-image: url(../img/layout/filmy.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/filmy.png*/;
+}
+
+nav aside .layout{
+	margin: 0;
+}
+nav aside .layout td{
+	padding: 0;
+}
+nav aside .layout td a{
+	padding: 0 7px 0 3px;
+	display: block;
+}
+.page nav aside table{
+	margin-right: 0px;
+	margin-left: 15px;
+}
+.page table.orange{
+	margin: 0px 0 15px 0px;
+}
+.page nav aside table.orange table{
+	margin: 0px 0 10px 0px;
+}
+.page nav aside table.orange td{
+	padding: 1px 0 1px 0;
+}
+.page nav aside table.orange td a{
+	padding: 0px 3px 0px 1px;
+	display: block;
+}
+.page nav aside .zdjecia{
+    	width: 110px;
+}
+.page nav aside .gimnazjum .layout, .page nav aside .liceum .layout{
+	margin-bottom: 3px;
+}
+#slider{
+	width: 616px ;
+	height: 246px;
+	border: 2px #9aa2b1 solid;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+}
+
+.navi{
+	padding: 14px 15px 5px;
+	font-weight: bold;
+	color: #666666;
+}
+.navi span{
+	color: #EA831C;
+	font-weight: bold;
+	font-size: 18px;
+	position: relative;
+	bottom: -1px;
+}
+.navi a{
+	color: #003366;
+}
+
+.home #main{
+	background: transparent url(../img/layout/home-main-bg.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/home-main-bg.gif*/ no-repeat center top;
+	padding: 26px 0 13px;
+}
+.page #main{
+	padding: 16px 0 6px;
+}
+
+#left_panel{
+	width: 235px;
+	float: left;
+}
+#main_panel, #archive_panel{
+	width: 496px;
+	float: left;
+	margin: 0 13px;
+	position: relative;
+}
+#right_panel{
+	width: 235px;
+	float: right;
+}
+.page #right_panel{
+	margin-top: 370px;
+}
+
+section .title, .page nav aside .title, .box .title{
+	color: #fff;
+	font-family: 'Voces', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	padding: 7px 14px 4px;
+	margin: 0;
+}
+#left_panel .title, #right_panel menu .title{
+	background: transparent url(../img/layout/left_panel-title.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/left_panel-title.png*/ no-repeat left top;
+}
+#left_panel .submenu .title{
+	background: transparent url(../img/layout/submenu-title.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/submenu-title.png*/ no-repeat left top;
+}
+#left_panel .submenu ul{
+	background-color: #fbfbfb;
+}
+menu{
+	margin-bottom: 20px;
+}
+menu ul{
+	margin: 0;
+	padding: 18px 14px 3px 12px;
+	border: #e8e8e8 1px solid;
+	border-width: 0 1px 1px;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	background-color: #fff;
+}
+menu li{
+	border-top: #dedede 1px solid;
+	padding: 5px 0 3px;
+	display: block;
+}
+menu li:first-child{
+	border: none;
+}
+menu a{
+	color: #666;
+	text-decoration: none;
+	font-size: 12px;
+	background: transparent url(../img/layout/menu-li.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/menu-li.png*/ no-repeat 6px 5px;
+	padding: 3px 0 3px 22px;
+	display: block;
+}
+menu a:hover{
+	text-decoration: none;
+}
+menu a.hover, menu a.selected{
+	background-image: url(../img/layout/menu-li-active.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/menu-li-active.png*/;
+	color: #0f4293;
+	font-weight: bold;
+}
+menu ul ul{
+	border: none;
+	border-top: #dedede 1px solid;
+	padding: 0;
+	margin-top: 4px;
+}
+menu li li{
+	margin-left: 15px;
+}
+menu .images{
+	padding: 15px 13px
+}
+menu .images li{
+	margin-left: 15px;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+menu .images li a{
+	background: none;
+	padding: 0;
+}
+menu .images li img{
+	margin: 0;
+}
+
+#main_panel .title{
+	background: transparent url(../img/layout/main_panel-title.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/main_panel-title.png*/ no-repeat left top;
+}
+#main_panel div.header .title{
+	background: transparent url(../img/layout/main_panel-title-red.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/main_panel-title-red.png*/ no-repeat left top;
+}
+#main_panel .inside{
+	margin: 0 0 20px;
+	padding: 1px 12px 0px 12px;
+	border: #e8e8e8 1px solid;
+	border-width: 0 1px 1px;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	background-color: #fff;
+}
+#main_panel div.header .inside{
+	border: #ea8017 1px solid;
+	/*border: #f96e6e 1px solid;*/
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: transparent url(../img/layout/panel-shadow.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/panel-shadow.png*/ repeat-x left top;
+	padding-top: 10px;
+}
+#main_panel .inside .in{
+	margin: 17px 0 17px;
+}
+
+#right_panel section .title{
+	background: transparent url(../img/layout/right_panel-title.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/right_panel-title.png*/ no-repeat left top;
+}
+#right_panel section .inside, .page nav aside .inside{
+	margin: 0;
+	padding: 18px 14px 3px 12px;
+	border: #e8e8e8 1px solid;
+	border-width: 0 1px 1px;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	background-color: #fff;
+}
+.page nav aside .title{
+	background: transparent url(../img/layout/submenu-title.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/submenu-title.png*/ no-repeat left top;
+}
+.page nav aside .inside{
+	background-color: #fbfbfb;
+}
+
+div.foto{
+	float: left;
+	width: 117px;
+	text-align: center;
+}
+div.foto img{
+	width: 100px;
+}
+
+footer{
+	height: 266px;
+	background: transparent url(../img/layout/footer.jpg)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/footer.jpg*/ no-repeat center bottom;
+}
+footer .inside{
+	background: transparent url(../img/layout/footer-inside.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/footer-inside.png*/ no-repeat center top;
+	width: 992px;
+	margin: 0 auto 40px;
+}
+footer #icons{
+	width: 285px;
+	height: 133px;
+	float: right;
+	padding: 40px 30px 10px 0;
+}
+footer #short-track{
+	width: 385px;
+	height: 266px;
+	display: block;
+	float: left;
+	outline: none;
+}
+footer #contact{
+	width: 280px;
+	float: left;
+	padding: 20px 10px 0px 0;
+}
+footer #contact h4{
+	padding: 8px 0 5px;
+	margin: 0;
+}
+footer .f{
+	padding: 12px 0 5px 0px;
+	float: left;
+}
+footer menu{
+	clear: both;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+footer menu ul{
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+footer menu ul li{
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 0;
+	border: none;
+}
+footer menu ul li a, footer menu ul li a:hover, footer menu ul li a.hover, footer menu ul li.hover a.selected{
+	background: none;
+	border: none;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #999;
+	font-size: 12px;
+	padding-left: 0;
+}
+.copyright{
+	color: #3366cc;
+	font: bold 12px tahoma;
+	padding: 1px 0 0px 0px;
+	
+}
+.powered{
+	padding-left: 0px;
+}
+.powered a{
+	color: #cccccc;
+	font-size: 11px;
+	text-decoration: none;
+}
+.powered a: hover{
+	text-decoration: none;
+}
+.powered strong{
+	color: #bbb;
+}
+
+
+
+
+
+
+
+/*             CALENDAR            */
+.calendar{
+	padding: 0 0px 10px;
+}
+.calendar .nav, .calendar .cal_head, .calendar .cal_body{
+	padding: 0 10px;
+}
+.calendar .nav .prev{
+	float: left;
+	width: 30px;
+}
+.calendar .nav .prev a{
+	width: 9px;
+	height: 11px;
+	display: block;
+	float: right;
+	margin-top: 4px;
+	background: url(../img/layout/mini_arrow-left.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/mini_arrow-left.gif*/ no-repeat 0 0;
+}
+.calendar .nav .month{
+	float: left;
+	width: 120px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+}
+.calendar .nav .next{
+	float: left;
+	width: 30px;
+}
+.calendar .nav .next a{
+	width: 9px;
+	height: 11px;
+	display: block;
+	float: left;
+	margin-top: 4px;
+	background: url(../img/layout/mini_arrow-right.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/mini_arrow-right.gif*/ no-repeat 0 0;
+}
+.calendar .nav a:hover{
+	background-position: 0 -11px;
+}
+.calendar .cal_head div{
+	font-weight: bold;
+	font-size: 11px;
+	float: left;
+	width: 20px;
+	padding: 10px 3px 5px;
+	text-align: right;
+}
+.calendar .cal_body div{
+	font-size: 11px;
+	float: left;
+	width: 20px;
+	padding: 0px 3px 5px;
+	margin: 0 0px;
+	text-align: right;
+}
+.calendar .cal_body span{
+	color: #016797;
+}
+.calendar .cal_body a{
+	color: #ea831c;
+	text-decoration: none;
+	cursor: pointer;
+}
+.calendar .cal_body a.current{
+	font-weight: bold;
+}
+.calendar .cal_content{
+	margin: 10px 0;
+}
+.calendar .cal_content h4{
+	color: #ea831c;
+	font-size: 14px;
+	text-align: center;
+}
+.calendar .cal_content dt{
+	color: #2a74b5;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 5px 0 3px;
+}
+.calendar .cal_content dd{
+	font-size: 11px;
+	text-align: justify;
+}
+.calendar .cal_tip{
+	display: none;
+}
+.calendar .cal_date{
+	display: none;
+}
+
+
+
+/*             FILMS            */
+.ourvideo {
+	padding-bottom: 15px;
+}
+.ourvideo .imagebox {
+    vertical-align: top;
+	width: 145px;
+	float: left;
+}
+.ourvideo .areabox{
+    width: 325px;
+	float: left;
+}
+.ourvideo  p{
+    margin: 0;
+	line-height: normal;
+}
+img.videoimage {
+    cursor: pointer;
+    width: 120px;
+}
+.faqItem {
+    height: auto !important;
+    line-height: normal !important;
+}
+.faqItem a {
+    color: #FFD600;
+}
+.faqItem a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.playercontainer {
+    display: none;
+	margin-right: 60px;
+	text-align: right;
+}
+.hideButton {
+	text-align: right;
+display: block;
+    text-align: right;
+}
+.video-time {
+    bottom: 1px;
+    margin-right: 0;
+    margin-top: 0;
+    opacity: 1;
+    position: absolute;
+    right: 1px;
+}
+.video-time span {
+    background-color: #000000;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF !important;
+    display: none;
+    font-size: 11px;
+    font-weight: bold;
+    height: 14px;
+    line-height: 14px;
+    opacity: 0.75;
+    padding: 0 4px;
+    vertical-align: top;
+}
+.video-splitter {
+    display: block;
+    padding-bottom: 15px;
+}
+.video{
+	display: none;
+}
+
+
+
+.nextprev{
+	padding: 13px 10px 0;
+	text-align: center;
+	/*border-top: 1px dashed #E8E8E8;*/
+}
+.nextprev span.span{
+	padding: 10px 10px;
+}
+.nextprev img{
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+}
+.nextprev a{
+	font: bold 12px arial;
+	color: #fff;
+	background-color: #003366;
+	display: inline-block;
+	margin: 0px 3px;
+	padding: 2px 6px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+.nextprev a:hover{
+	color: #fff;
+	background-color: #EA831C;
+	text-decoration: none;
+}
+.nextprev a.selected{
+	background-color: #EA831C;
+}
+.nextprev .nav_prev{
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	margin: 3px 3px;
+	padding: 0px;
+	background: url(../img/layout/mini_arrow-left.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/mini_arrow-left.gif*/ no-repeat 0 -11px;
+	position: relative;
+	top: 5px;
+}
+.nextprev a.nav_prev{
+	background: url(../img/layout/mini_arrow-left.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/mini_arrow-left.gif*/ no-repeat 0 -11px;
+}
+.nextprev a.nav_prev:hover{
+	background: url(../img/layout/mini_arrow-left.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/mini_arrow-left.gif*/ no-repeat 0 0px;
+}
+.nextprev .nav_next{
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	margin: 3px 3px;
+	padding: 0;
+	background: url(../img/layout/mini_arrow-right.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/mini_arrow-right.gif*/ no-repeat 0 -11px;
+	position: relative;
+	top: 5px;
+}
+.nextprev a.nav_next{
+	background: url(../img/layout/mini_arrow-right.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/mini_arrow-right.gif*/ no-repeat 0 -11px;
+}
+.nextprev a.nav_next:hover{
+	background: url(../img/layout/mini_arrow-right.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/mini_arrow-right.gif*/ no-repeat 0 0px;
+}
+
+.nextprev .nav_next_txt{
+	background: #ccc url(../img/layout/arrow-right.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/arrow-right.png*/ no-repeat top right;
+	font: bold 12px arial;
+	color: #fff;
+	display: inline-block;
+	margin: 0px 3px;
+	padding: 2px 6px;
+	padding-right: 20px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+.nextprev .nav_prev_txt{
+	background: #ccc url(../img/layout/arrow-left.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/arrow-left.png*/ no-repeat top left;
+	font: bold 12px arial;
+	color: #fff;
+	display: inline-block;
+	margin: 0px 3px;
+	padding: 2px 6px;
+	padding-left: 20px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+.nextprev a.nav_next_txt, .nextprev a.nav_prev_txt{
+	background-color: #003366;
+}
+.nextprev a.nav_next_txt:hover, .nextprev a.nav_prev_txt:hover{
+	background-color: #EA831C;
+}
+
+
+/* Start invisible until the plugin is loaded */
+#carousel{
+	display: none;
+}
+
+/* The frames */
+#carousel li{
+	background: #fff url(../img/layout/loading2.gif)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/loading2.gif*/ center no-repeat;
+	list-style-image: none;
+}
+
+/* Headers of all frames */
+#carousel h6{
+	margin: 0 0 5px;
+	font-family: sans-serif;
+	line-height: 100%;
+	font-weight: normal;
+	color: #222;
+}
+
+/* Description text of all frames */
+#carousel span{
+	font-family: sans-serif;
+	padding: 15px 25px 20px;
+	margin: 0;
+	color: #444;
+	background: #fff;
+}
+
+/* The most frontal item */
+#carousel .front{
+	margin-top: 0;
+}
+#carousel .front img{
+	margin: 5px;
+}
+
+/* The further back items */
+#carousel .behind{
+	margin-top: 20px;
+}
+#carousel .behind img{
+	margin: 0px;
+}
+#carousel .behind h6{
+	font-size: 20px;
+}
+#carousel .behind span{
+	font-size: 12px;
+}
+
+#icons .left{
+	display: block;
+	position: absolute;
+	z-index: 50;
+	width: 75px;
+	height: 95px;
+	top: 10px;
+	left: 0;
+	background: transparent url(../img/layout/carousel-left.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/carousel-left.png*/ no-repeat 0 0;
+	cursor: pointer;
+}
+#icons .right{
+	display: block;
+	position: absolute;
+	z-index: 50;
+	width: 75px;
+	height: 95px;
+	top: 10px;
+	right: 0;
+	background: transparent url(../img/layout/carousel-right.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/carousel-right.png*/ no-repeat 0 0;
+	cursor: pointer;
+}
+#icons .left:hover, #icons .right:hover{
+	background-position: 0 -95px;
+}
+
+/* That's it for the settings */
+
+.boutique{ margin:0; padding:0; position:relative; z-index:1 }
+.boutique li{ margin:0; padding:0; list-style:none; position:absolute; z-index:1; display:none; border-width:0 }
+.boutique img{ border:0; vertical-align:bottom }
+.boutique span{ display:block; position:absolute; left:0; right:0; bottom:0; text-align:left; cursor:default }
+.boutique h6{ cursor:default }
+.boutique a, .boutique a:hover{ cursor:default; text-decoration:none; outline:none }
+.boutique img, .boutique li, .boutique a{ -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -o-user-select:none; user-select:none; -webkit-user-drag:none; -moz-user-drag:none; user-drag:none }
+
+
+#map img{
+	border: none;
+	margin: 0;
+	padding: 0;
+	background: transparent none;
+}
+#map{
+	height: 413px;
+	border: 1px solid #252627;
+	background-color: #999;
+	margin-top: 10px;
+}
+
+.virtual_gallery{
+	cursor: pointer;
+}
+.home .virtual_gallery{
+	margin-right: 0px;
+}
+
+.home .desc .virtual_gallery{
+	float: right;
+}
+
+.komunikaty{
+	margin-top: -20px;
+	cursor: pointer;
+}
+
+/*.komunikaty .orange-btn{
+	display: block;
+	background: transparent url(../img/layout/red-large.png) no-repeat 0 0;
+	color: #fff;
+	font-family: 'Voces', sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	padding: 15px 14px;
+	margin: 0 0 15px;
+	text-align: center;
+}
+.komunikaty .read{
+	background: transparent url(../img/layout/orange-large.png) no-repeat 0 0;
+}
+.komunikaty .orange-btn:hover{
+	text-decoration: none;
+}*/
+.komunikaty .warning-btn{
+	display: block;
+	color: #EA831C;
+	font-family: tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 15px 14px;
+	margin: 0 0 10px;
+	text-align: center;
+}
+.komunikaty .read{
+	color: #0F4293;
+}
+
+
+.komunikaty .hidden_content{
+	display: none;
+}
+#komunikat{
+	padding-right: 10px;
+	cursor: pointer;
+}
+#komunikat h2{
+	font: bold 22px tahoma, cursive;
+	color: #EA831C;
+	text-align: center;
+	color: #EA831C;
+	margin: 0px 0 18px 0px;
+}
+
+
+
+div.horizontal_scroller, div.vertical_scroller{
+	position:relative;
+	display:block;
+	overflow:hidden;
+	padding: 0;
+	height: 22px;
+	cursor: pointer;
+}
+div.scrollingtext{
+	position:absolute;
+	white-space:nowrap;
+	cursor: pointer;
+}
+.scrollingtext ul{
+	margin: 0;
+	padding: 0;
+}
+.scrollingtext li{
+	display: inline;
+	padding: 0;
+	list-style-image: none;
+	padding: 0px 0 0px 20px;
+}
+
+
+.wydarzenia .desc{
+	position: relative;
+}
+.wydarzenia .cnt{
+	display: none;
+	position: relative;
+}
+.wydarzenia .ctrl{
+	position: absolute;
+	top: -25px;
+	right: 0;
+}
+.wydarzenia .t{
+	width: 242px;
+}
+
+.box .ctrl{
+	float: right;
+	margin: 9px 10px 0 0;
+}
+
+.media,
+.media-body {
+  overflow: hidden;
+  *overflow: visible;
+  zoom: 1;
+  display: table-cell;
+  width: 100%;
+}
+.media,
+.media .media {
+  margin-top: 5px;
+  display: table;
+  width: 100%;
+}
+.media .pull-left {
+  margin-right: 10px;
+  display: table-cell;
+  vertical-align: top;
+}
+.media .pull-right {
+  margin-left: 10px;
+  display: table-cell;
+  vertical-align: top;
+}
+.media .foto-right {
+  margin-left: 10px;
+  float: right;
+}
+.media .foto-left{
+  margin-right: 10px;
+  float: left;
+}
+.media .foto-right{
+	margin: 2px 0px 2px 8px;
+	max-width: 90px !important;
+	height: auto !important;
+}
+.media .foto-left{
+	margin: 2px 8px 2px 0px;
+	max-width: 90px !important;
+	height: auto !important;
+}
+.media-list {
+  margin-left: 0;
+  list-style: none;
+}
+.media .t{
+	margin-top: 3px;
+}
+article img{
+	max-width: 430px !important;
+	height: auto !important;
+}
+.media img{
+	max-width: 300px !important;
+	height: auto !important;
+}
+.pull-left {
+  
+}
+/* stara wersja
+.item .date{
+    	display: block;
+    	float: left;
+    	overflow: hidden;
+    	margin: 3px 15px 3px 5px;
+	border: 1px #DEDEDE solid;
+    	width: 65px;
+	color: #003366;
+	text-align: center;
+	font: 11px tahoma;
+	padding: 10px 3px;
+	-webkit-border-radius: 5px;
+    	-moz-border-radius: 5px;
+    	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+	background-color: #FBFBFB;
+}
+.item .date-active{
+	background-color: #f0f0f0;
+}
+.item .date .day{
+	color: #EA831C;
+	font: bold 16px tahoma;
+	display: block;
+	padding: 0 0 5px;
+}*/
+.item .date{
+    	display: block;
+    	float: left;
+    	overflow: hidden;
+    	margin: 3px 15px 3px 5px;
+    	width: 65px;
+	color: #EA831C;
+	text-align: center;
+	font: 11px tahoma;
+	padding: 10px 3px 8px;
+	background: transparent url(../img/layout/kartka1.png)/*tpa=http://www.zsoms1.bialystok.pl/img/layout/kartka1.png*/ no-repeat 0 0;
+	-webkit-border-radius: 8px;
+    	-moz-border-radius: 8px;
+    	border-radius: 8px;
+}
+.item .date-active .day{
+	text-decoration: underline;
+}
+.item .date .day{
+	color: #003366;
+	font: bold 16px tahoma;
+	display: block;
+	padding: 8px 0 2px;
+}
+.panorama180, .panorama360{
+	cursor: pointer;
+}
+
+
+#catapult-cookie-bar {
+    background-color: #464646;
+    bottom: 0;
+    color: #DDDDDD;
+    direction: ltr;
+    left: 0;
+    min-height: 30px;
+    padding: 6px 20px 4px;
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    z-index: 99999;
+}
+#catapult-cookie-bar .ins{
+    margin: 0 auto;
+    width: 992px;
+}
+
+#catapult-cookie-bar a {
+    color: #DDDDDD;
+}
+button#catapultCookie {
+    background: none repeat scroll 0 0 #EA831C;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    color: #DDDDDD;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0 20px;
+    padding: 4px 12px;
+}

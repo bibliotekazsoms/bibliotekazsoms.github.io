@@ -1,0 +1,31 @@
+.home, .page, .our, .body, .home .body, .home #main{
+	background: none;
+}
+header, footer, #left_panel, #right_panel, .print{
+	display: none;
+}
+#main_panel, #archive_panel, .body{
+	float: none;
+	clear: both;
+	width: auto;
+}
+#main_panel .inside {
+	border: none;
+}
+#main_panel .title {
+    	background: none;
+	border-bottom: #EA831C 1px solid;
+	font: 26px tahoma, cursive;
+	color: #EA831C;
+	margin-top: 5px;
+	padding-bottom: 15px;
+}
+.home #main, .page #main{
+	padding-top: 0;
+}
+.print_logo{
+	position: absolute;
+	right: 20px;
+	height: 65px;
+}
+
